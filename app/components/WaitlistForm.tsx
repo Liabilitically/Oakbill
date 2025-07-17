@@ -35,7 +35,7 @@ const WaitlistForm = () => {
                     </div>
                     <p className="text-info mt-6 space-y-4">
                         <p>
-                            We'll let you know as soon as OakBill is ready. No spam, no corporate fluff – just a heads up when you can start creating clean, simple invoices that actually get paid.
+                            We'll let you know as soon as OakBill is ready. No spam, no corporate fluff — just a heads up when you can start creating clean, simple invoices that actually get paid.
                         </p>
                         <p>
                             Keep doing great work,<br />
