@@ -1,103 +1,51 @@
-import Image from "next/image";
+import NavigationBar from "./components/NavigationBar";
+import WaitlistForm from "./components/WaitlistForm";
+import Footer from "./components/Footer";
+import InfoCard from "./components/InfoCard";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main className="flex flex-col text-primary min-h-screen bg-base-100 selection:bg-base-300 selection:text-base-content">
+      <NavigationBar />
+      <div className="flex-col flex-1 justify-items-center">
+        <h2 className="text-6xl justify-center text-center mb-7 mt-15 mx-4 font-bold dark:text-base-content">Get paid faster, stress less</h2>
+        <p className="text-xl px-4 justify-center text-center mb-14 text-info lg:w-2xl">
+          The invoicing tool that feels as natural as your creativity. Coming soon for freelancers who value simplicity and reliability.
+        </p>
+        <div className="grid gap-6 md:grid-cols-3 grid-cols-1 mb-24">
+          <InfoCard iconName="psychiatry" cardTitle="Effortless Creation" cardContent="Build beautiful invoices in minutes, not hours. No complicated templates or confusing menus." />
+          <InfoCard iconName="autorenew" cardTitle="Gentle Reminders" cardContent="Automatic follow-ups that maintain relationships while getting you paid. Professional, never pushy." />
+          <InfoCard iconName="mobile_3" cardTitle="Mobile-First Design" cardContent="Invoice clients from anywhere. Co-working space, home studio, or client site — your business travels with you." />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <div className="flex-col w-full justify-items-center text-center select-none">
+          <p className="mb-1">Join the Waitlist</p>
+          <span className="material-symbols-outlined text-primary animate-pulse" style={{ fontSize: '2rem' }}>keyboard_arrow_down</span>
+        </div>
+      </div>
+      <div className="flex h-96 mt-4 bg-base-200 justify-center items-center">
+        <WaitlistForm />
+      </div>
+      <div className="flex-col h-96 bg-base-100 justify-center justify-items-center text-center p-10">
+        <h2 className="text-4xl font-bold">FAQs</h2>
+        <div className="mt-7 md:w-3xl w-md">
+          <div className="collapse bg-base-200 border border-base-300 shadow-sm">
+            <input type="radio" name="my-accordion-1" defaultChecked />
+            <div className="collapse-title font-semibold bg-base-200">When will Oakbill be ready?</div>
+            <div className="collapse-content text-sm">We're putting the finishing touches on something truly special. Waitlist members will get first access when we're ready to launch.</div>
+          </div>
+          <div className="collapse bg-base-200 border border-base-300 shadow-sm">
+            <input type="radio" name="my-accordion-1" />
+            <div className="collapse-title font-semibold">What makes this different from other expensive invoicing tools?</div>
+            <div className="collapse-content text-sm">We believe invoicing should feel as natural as your creative process. No corporate coldness, just a simple and reliable tool that works the way you want it to.</div>
+          </div>
+          <div className="collapse bg-base-200 border border-base-300 shadow-sm">
+            <input type="radio" name="my-accordion-1" />
+            <div className="collapse-title font-semibold">How much will it cost?</div>
+            <div className="collapse-content text-sm">We're designing fair pricing for independent creators. Waitlist members get early access to our founder's pricing.</div>
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </main>
   );
 }
