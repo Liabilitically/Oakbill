@@ -31,7 +31,7 @@ export default function Home() {
           <div className="collapse bg-base-200 border border-base-300 shadow-sm">
             <input type="radio" name="my-accordion-1" defaultChecked />
             <div className="collapse-title font-semibold bg-base-200">When will Oakbill be ready?</div>
-            <div className="collapse-content text-sm">We're putting the finishing touches on something truly special. Waitlist members will get first access when we're ready to launch.</div>
+            <div className="collapse-content text-sm">We&rsquo;re putting the finishing touches on something truly special. Waitlist members will get first access when we&rsquo;re ready to launch.</div>
           </div>
           <div className="collapse bg-base-200 border border-base-300 shadow-sm">
             <input type="radio" name="my-accordion-1" />
@@ -41,7 +41,7 @@ export default function Home() {
           <div className="collapse bg-base-200 border border-base-300 shadow-sm">
             <input type="radio" name="my-accordion-1" />
             <div className="collapse-title font-semibold">How much will it cost?</div>
-            <div className="collapse-content text-sm">We're designing fair pricing for independent creators. Waitlist members get early access to our founder's pricing.</div>
+            <div className="collapse-content text-sm">We&rsquo;re designing fair pricing for independent creators. Waitlist members get early access to our founder&rsquo;s pricing.</div>
           </div>
         </div>
       </div>

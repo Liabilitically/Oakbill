@@ -35,7 +35,7 @@ const WaitlistForm = () => {
                     </div>
                     <p className="text-info mt-6 space-y-4">
                         <p>
-                            We'll let you know as soon as OakBill is ready. No spam, no corporate fluff — just a heads up when you can start creating clean, simple invoices that actually get paid.
+                            We&rsquo;ll let you know as soon as OakBill is ready. No spam, no corporate fluff — just a heads up when you can start creating clean, simple invoices that actually get paid.
                         </p>
                         <p>
                             Keep doing great work,<br />
@@ -47,7 +47,7 @@ const WaitlistForm = () => {
                 <div className="card-body">
                     <h2 className="card-title text-4xl font-bold justify-center">Join the early makers</h2>
                     <p className="text-info mt-3">
-                        Be among the first to experience invoicing that doesn't feel like work. We're crafting something special, and we'd love to have you along for the journey
+                        Be among the first to experience invoicing that doesn&rsquo;t feel like work. We&rsquo;re crafting something special, and we&rsquo;d love to have you along for the journey
                     </p>
                     <form className="flex justify-center gap-3 mt-6" onSubmit={handleSubmit}>
                         <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="input input-info validator placeholder:text-info text-info px-2" required placeholder="Email" pattern="^([a-zA-Z0-9_\-\.+]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" />
