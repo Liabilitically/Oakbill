@@ -2,7 +2,7 @@
 
 @plugin "daisyui";
 @plugin "daisyui/theme" {
-  name: "oakbill";
+  name: "oakbill-light";
   default: true;
   prefersdark: false;
   color-scheme: light;
@@ -28,19 +28,55 @@
   --color-error: #FF6E5E;
   --color-error-content: #3B332D;
 
-  /* border radius */
   --radius-selector: 0.5rem;
   --radius-field: 0.5rem;
   --radius-box: 0.5rem;
 
-  /* base sizes */
   --size-selector: 0.25rem;
   --size-field: 0.25rem;
 
-  /* border size */
   --border: 1px;
 
-  /* effects */
+  --depth: 1;
+  --noise: 1;
+}
+
+@plugin "daisyui/theme" {
+  name: "oakbill-dark";
+  default: false;
+  prefersdark: true;
+  color-scheme: dark;
+
+  --color-base-100: #1A1612;
+  --color-base-200: #2D2520;
+  --color-base-300: #3F362E;
+  --color-base-content: #E8E0D6;
+  --color-primary: #D4C4B0;
+  --color-primary-content: #1A1612;
+  --color-secondary: #CC8A5C;
+  --color-secondary-content: #1A1612;
+  --color-accent: #CC8A5C;
+  --color-accent-content: #1A1612;
+  --color-neutral: #E8E0D6;
+  --color-neutral-content: #1A1612;
+  --color-info: #A68B6A;
+  --color-info-content: #1A1612;
+  --color-success: #8FA647;
+  --color-success-content: #1A1612;
+  --color-warning: #E8804A;
+  --color-warning-content: #1A1612;
+  --color-error: #E85A4A;
+  --color-error-content: #1A1612;
+
+  --radius-selector: 0.5rem;
+  --radius-field: 0.5rem;
+  --radius-box: 0.5rem;
+
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+
+  --border: 1px;
+
   --depth: 1;
   --noise: 1;
 }

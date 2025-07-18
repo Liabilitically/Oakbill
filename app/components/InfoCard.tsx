@@ -6,7 +6,7 @@ const InfoCard = ({iconName='disabled_by_default', cardTitle='Untitled Card', ca
             <div className="card-body">
                 <div className="flex mb-4">
                     <span className="material-symbols-outlined text-base-100 p-2 mr-4 bg-accent rounded select-none">{ iconName }</span>
-                    <h2 className="card-title text-xl">{ cardTitle }</h2>
+                    <h2 className="card-title text-xl dark:text-base-content">{ cardTitle }</h2>
                 </div>
                 <p className="text-md">
                     { cardContent }

@@ -5,29 +5,31 @@ import InfoCard from "./components/InfoCard";
 
 export default function Home() {
   return (
-    <main className="flex flex-col text-primary min-h-screen bg-base-100 selection:bg-base-300 selection:text-base-content">
+    <main className="flex flex-col items-center text-primary min-h-screen bg-base-100 selection:bg-base-300 selection:text-base-content">
       <NavigationBar />
-      <div className="flex-col flex-1 justify-items-center">
-        <h2 className="text-6xl justify-center text-center mb-7 mt-15 mx-4 font-bold dark:text-base-content">Get paid faster, stress less</h2>
+      <div className="flex flex-col flex-1 items-center px-4">
+        <h2 className="md:text-6xl text-5xl justify-center text-center mb-7 md:mt-15 mt-5 mx-4 font-bold dark:text-base-content">Get paid faster, stress less</h2>
         <p className="text-xl px-4 justify-center text-center mb-14 text-info lg:w-2xl">
           The invoicing tool that feels as natural as your creativity. Coming soon for freelancers who value simplicity and reliability.
         </p>
-        <div className="grid gap-6 md:grid-cols-3 grid-cols-1 mb-24">
-          <InfoCard iconName="psychiatry" cardTitle="Effortless Creation" cardContent="Build beautiful invoices in minutes, not hours. No complicated templates or confusing menus." />
-          <InfoCard iconName="autorenew" cardTitle="Gentle Reminders" cardContent="Automatic follow-ups that maintain relationships while getting you paid. Professional, never pushy." />
-          <InfoCard iconName="mobile_3" cardTitle="Mobile-First Design" cardContent="Invoice clients from anywhere. Co-working space, home studio, or client site — your business travels with you." />
+        <div className="w-full flex justify-center">
+          <div className="grid gap-6 md:grid-cols-3 grid-cols-1 mb-24">
+            <InfoCard iconName="psychiatry" cardTitle="Effortless Creation" cardContent="Build beautiful invoices in minutes, not hours. No complicated templates or confusing menus." />
+            <InfoCard iconName="autorenew" cardTitle="Gentle Reminders" cardContent="Automatic follow-ups that maintain relationships while getting you paid. Professional, never pushy." />
+            <InfoCard iconName="mobile_3" cardTitle="Mobile-First Design" cardContent="Invoice clients from anywhere. Co-working space, home studio, or client site — your business travels with you." />
+          </div>
         </div>
         <div className="flex-col w-full justify-items-center text-center select-none">
           <p className="mb-1">Join the Waitlist</p>
           <span className="material-symbols-outlined text-primary animate-pulse" style={{ fontSize: '2rem' }}>keyboard_arrow_down</span>
         </div>
       </div>
-      <div className="flex h-96 mt-4 bg-base-200 justify-center items-center">
+      <div className="flex min-h-96 mt-4 bg-base-200 justify-center items-center py-7 w-full px-4">
         <WaitlistForm />
       </div>
-      <div className="flex-col h-96 bg-base-100 justify-center justify-items-center text-center p-10">
-        <h2 className="text-4xl font-bold">FAQs</h2>
-        <div className="mt-7 md:w-3xl w-md">
+      <div className="flex flex-col bg-base-100 items-center text-center p-10 mb-10 w-full">
+        <h2 className="text-4xl font-bold dark:text-base-content">FAQs</h2>
+        <div className="mt-7 w-full max-w-3xl px-4">
           <div className="collapse bg-base-200 border border-base-300 shadow-sm">
             <input type="radio" name="my-accordion-1" defaultChecked />
             <div className="collapse-title font-semibold bg-base-200">When will Oakbill be ready?</div>
