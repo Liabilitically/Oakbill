@@ -26,7 +26,7 @@ const WaitlistForm = () => {
     }
 
     return (
-        <div className="card bg-base-100 shadow-sm md:w-3xl w-sm text-center py-3 px-4">
+        <div className="card bg-base-100 shadow-sm text-center py-3 px-4">
             { submitted ? (
                 <div className="card-body text-center">
                     <div className='flex flex-col items-center gap-5'>

@@ -2,14 +2,15 @@ import NavigationBar from "./components/NavigationBar";
 import WaitlistForm from "./components/WaitlistForm";
 import Footer from "./components/Footer";
 import InfoCard from "./components/InfoCard";
+import FAQ from "./components/FAQ";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center text-primary min-h-screen bg-base-100 selection:bg-base-300 selection:text-base-content">
       <NavigationBar />
       <div className="flex flex-col flex-1 items-center px-4">
-        <h2 className="md:text-6xl text-5xl justify-center text-center mb-7 md:mt-15 mt-5 mx-4 font-bold dark:text-base-content">Get paid faster, stress less</h2>
-        <p className="text-xl px-4 justify-center text-center mb-14 text-info lg:w-2xl">
+        <h2 className="md:text-6xl text-4xl justify-center text-center md:mb-7 mb-5 md:mt-15 mt-5 mx-4 font-bold dark:text-base-content">Get paid faster, stress less</h2>
+        <p className="md:text-xl text-md px-4 justify-center text-center mb-14 text-info lg:w-2xl">
           The invoicing tool that feels as natural as your creativity. Coming soon for freelancers who value simplicity and reliability.
         </p>
         <div className="w-full flex justify-center">
@@ -28,24 +29,7 @@ export default function Home() {
         <WaitlistForm />
       </div>
       <div className="flex flex-col bg-base-100 items-center text-center p-10 mb-10 w-full">
-        <h2 className="text-4xl font-bold dark:text-base-content">FAQs</h2>
-        <div className="mt-7 w-full max-w-3xl px-4">
-          <div className="collapse bg-base-200 border border-base-300 shadow-sm">
-            <input type="radio" name="my-accordion-1" defaultChecked />
-            <div className="collapse-title font-semibold bg-base-200">When will Oakbill be ready?</div>
-            <div className="collapse-content text-sm">We&rsquo;re putting the finishing touches on something truly special. Waitlist members will get first access when we&rsquo;re ready to launch.</div>
-          </div>
-          <div className="collapse bg-base-200 border border-base-300 shadow-sm">
-            <input type="radio" name="my-accordion-1" />
-            <div className="collapse-title font-semibold">What makes this different from other expensive invoicing tools?</div>
-            <div className="collapse-content text-sm">We believe invoicing should feel as natural as your creative process. No corporate coldness, just a simple and reliable tool that works the way you want it to.</div>
-          </div>
-          <div className="collapse bg-base-200 border border-base-300 shadow-sm">
-            <input type="radio" name="my-accordion-1" />
-            <div className="collapse-title font-semibold">How much will it cost?</div>
-            <div className="collapse-content text-sm">We&rsquo;re designing fair pricing for independent creators. Waitlist members get early access to our founder&rsquo;s pricing.</div>
-          </div>
-        </div>
+        <FAQ />
       </div>
       <Footer />
     </main>
