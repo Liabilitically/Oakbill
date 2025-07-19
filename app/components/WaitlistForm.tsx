@@ -35,7 +35,7 @@ const WaitlistForm = () => {
                     </div>
                     <p className="text-info mt-6 md:space-y-4 space-y-7">
                         <p>
-                            We&rsquo;ll let you know as soon as OakBill is ready. No spam, no corporate fluff — just a heads up when you can start creating clean, simple invoices that actually get paid.
+                            We&rsquo;ll let you know as soon as OakBill is ready. You can soon start creating clean, simple invoices that actually get paid.
                         </p>
                         <p>
                             Keep doing great work,<br />
@@ -47,7 +47,7 @@ const WaitlistForm = () => {
                 <div className="card-body">
                     <h2 className="card-title md:text-4xl text-3xl font-bold justify-center dark:text-base-content">Join the early makers</h2>
                     <p className="text-info mt-3 md:text-md text-sm">
-                        Be among the first to experience invoicing that doesn&rsquo;t feel like work. We&rsquo;re crafting something special, and we&rsquo;d love to have you along for the journey.
+                        Be among the first to experience invoicing that doesn&rsquo;t feel like work. We&rsquo;re crafting something special, and we&rsquo;d love to have you along for the journey. Also, waitlist members get early access to our founder&rsquo;s pricing.
                     </p>
                     <form className="flex md:flex-row flex-col justify-center gap-3 mt-6" onSubmit={handleSubmit}>
                         <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="input input-info validator placeholder:text-info text-info px-4" required placeholder="Email" pattern="^([a-zA-Z0-9_\-\.+]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" />
